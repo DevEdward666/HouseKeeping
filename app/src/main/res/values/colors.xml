@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorHalfWhite">#f5f5f5</color>
+    <color name="Trasparent">#00FFFFFF</color>
+
+
+    <color name="black">#000000</color>
+    <color name="smoke">#FBFBFB</color>
+
+    <color name="gray">#D8D7D7</color>
+
+    <color name="pending">#FFDF00</color>
+    <color name="colorcenter">#9999ff</color>
+    <color name="ongoing">#12f729</color>
+    <color name="colorstart">#3399ff</color>
+    <color name="colorend">#99ccff</color>
+</resources>

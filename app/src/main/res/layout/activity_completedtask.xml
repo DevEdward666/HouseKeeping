@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dash_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_layout_input"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Search"
+                android:textColorHint="@color/black"
+                app:errorEnabled="true">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+
+                    android:accessibilityLiveRegion="polite"
+                    android:background="?attr/editTextBackground"
+                    android:backgroundTint="@color/black"
+                    android:breakStrategy="high_quality"
+                    android:bufferType="editable"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:foregroundGravity="bottom"
+                    android:hapticFeedbackEnabled="false"
+                    android:inputType="text"
+                    android:scrollIndicators="bottom"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#191A1B"
+                    android:textColorHint="@color/black"
+                    android:textColorLink="#191A1B"
+                    android:theme="@style/AppTheme">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

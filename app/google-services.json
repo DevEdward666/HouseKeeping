@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "525029635732",
+    "firebase_url": "https://housekeeping-1556a.firebaseio.com",
+    "project_id": "housekeeping-1556a",
+    "storage_bucket": "housekeeping-1556a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525029635732:android:c824ff2c28b1c2c9b66681",
+        "android_client_info": {
+          "package_name": "com.tuo.housekeeping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525029635732-0kuco334d0a4su6d5b0g6m4j5dav2mdn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tuo.housekeeping",
+            "certificate_hash": "524ecb3df0230e03a8ef2e68976203879e3aac15"
+          }
+        },
+        {
+          "client_id": "525029635732-d40fhv5mut9fr30slaujdnj1gl07u87c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY_owpZ-E4KhcoSnYTuyqx7TFnMoWxbKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525029635732-d40fhv5mut9fr30slaujdnj1gl07u87c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

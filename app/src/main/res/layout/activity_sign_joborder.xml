@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_shape"
+    android:paddingStart="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|fill_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/card_shape"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_status_sign_joborder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="0"
+                    android:layout_columnWeight="0"
+                    android:layout_gravity="start"
+                    android:background="@drawable/card_shape"
+                    app:cardBackgroundColor="@color/Trasparent"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="1dp">
+
+                    <TextView
+                        android:id="@+id/txtstatus_sign_joborder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.4"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="start"
+                        android:padding="2dp"
+                        android:text="TextView"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="0"
+                android:layout_columnWeight="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:elevation="2dp"
+                                    android:hint="Room">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txt_Room_joborder"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/colorPrimary"
+                                        android:editable="false"
+                                        android:enabled="false"
+                                        android:fontFamily="@font/open_sans"
+                                        android:lineSpacingExtra="10sp"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#000000"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"
+                                        android:typeface="normal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:elevation="2dp"
+                                    android:hint="Bed">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txt_Bed_joborder"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/colorPrimary"
+                                        android:editable="false"
+                                        android:enabled="false"
+                                        android:fontFamily="@font/open_sans"
+                                        android:lineSpacingExtra="10sp"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#000000"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"
+                                        android:typeface="normal" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:elevation="2dp"
+                                android:hint="Requisition Date">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txt_requesition_sign"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimary"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:fontFamily="@font/open_sans"
+                                    android:lineSpacingExtra="10sp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:elevation="2dp"
+                            android:hint="Notes"
+                            app:hintAnimationEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtnotes_joborder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary"
+                                android:breakStrategy="high_quality"
+                                android:enabled="false"
+                                android:fontFamily="@font/open_sans"
+                                android:hint="Notes"
+                                android:inputType="textLongMessage|textMultiLine"
+                                android:padding="10dp"
+                                android:singleLine="false"
+                                android:textAlignment="viewStart"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:typeface="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="0"
+                android:layout_columnWeight="0"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Signature"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <android.gesture.GestureOverlayView
+                    android:id="@+id/sign_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="15dp"
+
+                    android:drawingCacheQuality="high"
+                    android:eventsInterceptionEnabled="false"
+                    android:fadeEnabled="true"
+                    android:fadeOffset="20000"
+                    android:gestureColor="#070707"
+                    android:gestureStrokeAngleThreshold="360"
+                    android:gestureStrokeLengthThreshold="0.1"
+                    android:gestureStrokeType="multiple"
+                    android:orientation="horizontal"
+                    android:uncertainGestureColor="@android:color/primary_text_light">
+
+                    <ImageView
+                        android:id="@+id/img_signage_joborder"
+                        android:layout_width="313dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="visible" />
+                </android.gesture.GestureOverlayView>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_accept_joborder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_desc"
+            app:backgroundTint="#0d7ae0"
+            app:maxImageSize="36dp"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_approve_joborder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_desc"
+            android:visibility="gone"
+            app:backgroundTint="#11e00d"
+            app:maxImageSize="36dp"
+            app:srcCompat="@drawable/ic_baseline_check_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_approve_scan_joborder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_desc"
+            app:backgroundTint="#FFFF"
+            app:maxImageSize="36dp"
+            app:srcCompat="@drawable/ic_baseline_qr_code_2_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_cancel_joborder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_desc"
+            app:backgroundTint="#fc003f"
+            app:maxImageSize="36dp"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
